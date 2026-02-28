@@ -3,7 +3,6 @@ import numpy as np
 from pathlib import Path
 from torch.utils.data import Dataset
 
-# NpyDataset
 class NpyDataset(Dataset):
     def __init__(self, root_dir, transform=None):
         """
