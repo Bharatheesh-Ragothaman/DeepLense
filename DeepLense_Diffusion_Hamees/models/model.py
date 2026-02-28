@@ -222,6 +222,9 @@ class DiTBlock(nn.Module):
         x = x + gate_mlp.unsqueeze(1) * self.mlp(modulate(self.norm2(x), shift_mlp, scale_mlp))
         return x
 
+#################################################################################
+#                                Final Layer                                    #
+#################################################################################
 
 class FinalLayer(nn.Module):
     """
