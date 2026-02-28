@@ -243,6 +243,9 @@ class FinalLayer(nn.Module):
         x = self.linear(x)
         return x
 
+#################################################################################
+#                         Nano Diffusion Transformer                            #
+#################################################################################
 
 class NanoDiT(nn.Module):
     """
